@@ -1,14 +1,16 @@
 
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import './App.css';
+import AppRouter from './components/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      Chat
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-//! 3 minutes 5 sec
